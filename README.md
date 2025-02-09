@@ -27,13 +27,13 @@ There are several limitations:
 - no files are created and there are no network requests,
 - code not saved after closing the browser.
 
-To save and extend your work you can choose an online programming environment (
-[Google Colab](https://colab.research.google.com/),
+To save and extend your work you can choose an online programming environment
+([Google Colab](https://colab.research.google.com/),
 [GitHub Codespaces](https://github.com/features/codespaces),
 [Repl.it](https://replit.com/),
 [Gitpod](https://www.gitpod.io/),
-[Yandex DataSphere](https://yandex.cloud/en/services/datasphere)
-) or install Python locally.
+[Yandex DataSphere](https://yandex.cloud/en/services/datasphere))
+or install Python locally.
 
 
 Task list
