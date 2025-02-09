@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this code and course material, cite it as below. You may not use this material for commercial purposes."
+authors:
+- family-names: "Pogrebnyak"
+  given-names: "Evgeny"
+  orcid: "https://orcid.org/0000-0003-3914-9665"
+title: "Seven Pure Python Programs for Non-Tech Beginners. Course Material."
+date-released: 2025-02-09
+url: "https://github.com/epogrebnyak/runnable-python"
