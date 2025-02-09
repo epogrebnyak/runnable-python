@@ -14,8 +14,6 @@ This course material is designed for non-technical students at different levels 
 
 3. Advanced level: Forecast the outcomes of programs over repeated runs using some theory or a simulation. Generalize code for reuse, make tests and refactor code for maintainability. Think of extensions for real-life cases.
 
-At the course website we provide a programming environment and code examples for the entry level, assignments for the intermediate exercises and question lists for advanced level.
-
 Depending on students' prior programming background the course objective may be limited to the first level or aim higher.
 
 Programming environment
