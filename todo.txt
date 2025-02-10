@@ -1,0 +1,6 @@
+- Student checklist 
+- Instructor manual: The instructor handbook should help conduct a class using this course material.
+- Study session schedules: If you are a self-learner consider 
+joining an occasional free study session.
+- Additional excercise in product management: design new small features that are realistic 
+to implement and useful for the users.
