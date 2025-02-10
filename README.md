@@ -6,7 +6,8 @@ A beginner course that makes you write and run small Python programs right in yo
 Levels
 ------
 
-This course material is designed for primary non-technical students and oraginaized by levels of learning.
+This course material is designed for non-technical students and organized by 
+three levels of difficulty.
 
 1. Entry level: Run provided examples and make small changes to the code to find out how it works and be able to explain it. Document existing code with comments or docstrings.
 
@@ -14,7 +15,7 @@ This course material is designed for primary non-technical students and oraginai
 
 3. Advanced level: Forecast the outcomes of programs over repeated runs using some theory or a simulation. Generalize code for reuse, make tests and refactor code for maintainability. Think of extensions for real-life cases.
 
-Depending on students' prior programming background a specific course objective may be limited to the first level or aim higher.
+Depending on students' prior programming background a specific course objective may be limited to the entry level or aim higher.
 Advanced level tasks would be appropriate for technical students. 
 
 Task list
@@ -75,5 +76,3 @@ Reference:
 Evgeny Pogrebnyak (2025). Seven Pure Python Programs for Non-Tech Beginners.
 URL: https://github.com/epogrebnyak/runnable-python
 ```
-
-
