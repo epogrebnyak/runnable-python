@@ -6,7 +6,7 @@ A beginner course that makes you write and run small Python programs right in yo
 Levels
 ------
 
-This course material is designed for primary non-technical students and oraginaized by levels fof learning.
+This course material is designed for primary non-technical students and oraginaized by levels of learning.
 
 1. Entry level: Run provided examples and make small changes to the code to find out how it works and be able to explain it. Document existing code with comments or docstrings.
 
