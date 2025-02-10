@@ -6,7 +6,7 @@ A beginner course that makes you write and run small Python programs right in yo
 Levels
 ------
 
-This course material is designed for non-technical students at different levels of engagement into programming.
+This course material is designed for primary non-technical students and oraginaized by levels of learning.
 
 1. Entry level: Run provided examples and make small changes to the code to find out how it works and be able to explain it. Document existing code with comments or docstrings.
 
@@ -14,18 +14,19 @@ This course material is designed for non-technical students at different levels 
 
 3. Advanced level: Forecast the outcomes of programs over repeated runs using some theory or a simulation. Generalize code for reuse, make tests and refactor code for maintainability. Think of extensions for real-life cases.
 
-Depending on students' prior programming background the course objective may be limited to the first level or aim higher.
+Depending on students' prior programming background a specific course objective may be limited to the first level or aim higher.
+Advanced level tasks would be appropriate for technical students. 
 
 Task list
 ---------
 
-Version 0.1.0 (2025-02-09) 
+Version 0.1.1 (2025-02-19) 
 
-The tasks start with a randomized greeting proceed to writing a code to grade the course final test.
+The tasks start with a randomized greeting and proceed to writing a code to grade the course final test.
 
 1. Greet (but be discreet)
 2. Motivate (never accept 'no' as an answer)
-3. Count (with formulas and an adding machine)
+3. Count (with formulas and make an adding machine)
 4. Write text (and make it a contract)
 5. Print (ornaments, shapes, and a maze)
 6. Guess (make an educated one)
@@ -48,6 +49,18 @@ similar to [Google Colab](https://colab.research.google.com/),
 [Repl.it](https://replit.com/),
 [Gitpod](https://www.gitpod.io/) or
 [Yandex DataSphere](https://yandex.cloud/en/services/datasphere).
+
+Pedagogy and motivation 
+-----------------------
+
+This course is a set of excercises in pure Python that aims to 
+
+- be brief and achieve more with less code;
+- cover all parts of basic Python syntax;
+- enable students edit and run code quickly and encourage experimentation;
+- stimulate to talk about code and to communicate;
+- make connections to real life;
+- project further learning path.
 
 Terms of use
 ------------
