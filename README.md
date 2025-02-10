@@ -50,6 +50,18 @@ similar to [Google Colab](https://colab.research.google.com/),
 [Gitpod](https://www.gitpod.io/) or
 [Yandex DataSphere](https://yandex.cloud/en/services/datasphere).
 
+Pedagogy and motivation 
+-----------------------
+
+This course is a set of excercises in pure Python that aims to 
+
+- be brief and achieve more with less code;
+- cover all parts of basic Python syntax;
+- enable students edit and run code quickly and encourage experimentation;
+- stimulate to talk about code and to communicate;
+- make connections to real life;
+- project further learning path.
+
 Terms of use
 ------------
 
