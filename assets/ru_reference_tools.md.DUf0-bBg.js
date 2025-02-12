@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as r}from"./chunks/framework.CvwbFZHS.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"ru/reference/tools.md","filePath":"ru/reference/tools.md"}'),o={name:"ru/reference/tools.md"};function a(s,c,n,f,l,p){return r(),t("div")}const i=e(o,[["render",a]]);export{d as __pageData,i as default};
