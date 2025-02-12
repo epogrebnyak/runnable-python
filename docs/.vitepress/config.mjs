@@ -3,6 +3,7 @@ import { vitepressPythonEditor } from "vitepress-python-editor/vite-plugin";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/runnable-python/",
   title: "The Python Starter 2025",
   description: "A quick path to start coding",
   ignoreDeadLinks: true,
