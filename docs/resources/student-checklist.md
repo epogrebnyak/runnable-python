@@ -1,6 +1,8 @@
-# Checklist
+# Student Checklist
 
-[[TOC]]
+Below is an experimental checklist for the Python syntax and 
+some key ideas in programming. Aimed to be minimal 
+but stiil quite a bit to master. Suggestions and comments are welcome.
 
 ## Basic data types
 
@@ -13,41 +15,45 @@
 ### Strings
 
 - Strings contain text and represent information like words, sentences, text
-  as well labels, titles, and names.
-- In code strings can be enclosed in single (`'`) or double (`"`) quotes.
-- Strings are iterable by character.
+  as well labels, titles and names.
+- In code strings are characters that are enclosed in single (`'`) or double (`"`) quotes.
+- Strings are iterable by character. Exercises: print a string by character, reverse a string, count characters in a string.
 - Operations with strings include concatenation, splitting, extracting parts, and modifying strings.
 - Operators (`+` and `*`), functions (like `len()`), and methods (like `.lower()`) work on strings.
-- Multiline strings are enclosed in triple quotes and contain newlines as escape characters.
+- Multiline strings are enclosed in triple quotes and contain newlines as escape characters. They are good to make a string that is a poem.
 
 ### Booleans
 
-- Comparison operations result in a boolean value. These values are used as flags for 
-  decisions.
+- Comparison operations result in a boolean value. These values are used as flags 
+  for decisions.
 - A boolean can only be `True` or `False`.
-- `and` and `or` operators combine booleans into logical expressions. They are 
+- `and` and `or` operators combine booleans into logical expressions athat are 
   useful for checking several conditions.
+
+<!--
 - A list of boolean values may be evaluated using built-in `all()` and `any()` 
   functions.   
+-->
 
 ### Conversion between types
 
-- The `str()`, `int()`, `float()`, and `bool()` constructors allow conversion between types.
-- Python automatically coerces types to minimize the conversions required from the   
-  programmer.
+- The `str()`, `int()`, `float()`, and `bool()` constructors allow conversion   
+  between types.
+- Python automatically coerces types to minimize the conversions required 
+  but sometimes a programmer must do it. Example: `input()` returns a string, but you need a number.
 
 ## Data structures (compound data types, collections)
 
-- Values of basic data types can be assembled into compound data types. Lists, tuples, and dictionaries are useful built-in compound data types.
+- Values of basic data types can be assembled into compound data types such as lists, tuples, and dictionaries.
 - A list is a sequence of values of the same type: `[7.5, 6.2, 5.1]`, `['Joe', 'Jane', 'Jim']`. 
-- Tuple joins together several values that can be of different types: `(25.5, 10.3)`, `(24, "B")`. 
-- Dictionaries are collections of key-value pairs. Using a dictionary you can look up of a value by its key, add new key-value pairs.
+- Tuple joins together several values of the same or different types: `(25.5, 10.3)` (2D coordinates), `(7, "B")` (airplane seat). 
+- Dictionaries are collections of key-value pairs. Using a dictionary you can look up of a value by its key.
 
 Common operations on collections include:
   - creating a collection,
   - accessing an element (by an index in a list or a tuple or by key in a dictionary),
   - subset or a slice of a collection,
-  - reusing a collection to create a new one (list comprehension).
+  - reusing a collection to create a new one.
 
 - Collections can be nested. For example, a list can contain tuples: `[(1, 2), (3, 4)]`.
 
@@ -55,22 +61,20 @@ Common operations on collections include:
 
 - A value is a small piece of data of a specific data type. `5` is an integer value, `0.33` is a float value, and `"Life is wonderful"` is a string value.
 - Several operations on values form an expression. An expression evaluates to a resulting value.
-- Longer defnition: An expression is a combination of values, variables, operators, and calls to functions that are evaluated to produce another value.
 - Operations have order of precedence that you can clarify with parenthesis `()`. 
 - You can use Python REPL to write out and evaluate expressions.
 
 ## Variables
 
-Concept: 
+### Concept
 
 - A variable is a named storage for a value that can be accessed throughout the program.
 - You can _bind_ a name to a value and refer to this value by that name later.
 
-Assignment:
+### Assignment operation
 
 - Another way of saying the same is that you _assign_ a value to a variable with a specific name. 
-- Assignment operator `=` takes an expression on the right right, evaluates it and assigns a value to a   
-  variable on the left. 
+- Assignment operator `=` takes an expression on the right right, evaluates it and assigns a value to a variable on the left. 
 
 ```python 
 language = "Python"
@@ -79,20 +83,18 @@ final_grade = (85+90+93)/3
 ```
 - When unpacking tuples you can assign to several variables: `a, b = (3, 8)`.
 
-Mutability: 
+### Mutability
 
-- In Python, all variables are mutable — you can change or reassign new values to them.
-  `x = 5; x = x + 1` works. 
+- In Python, all variables are mutable — you can change or reassign new values to them. `x = 5; x = x + 1` works. 
 
-Naming: 
+### Naming
 
 - There are requirements about what a valid variable name can be `my_age` is ok. 
 - Choosing good variable names is not trivial and can be very subjective.
 
-Extra:
+### Extra comment
 
-- Unlike in mathematics the variables values in programming are always known, not something you have to    
-  derive by solving equations.
+- Unlike in mathematics the value of the variables in programming are always known, they are not to be discovered by solving equations.
   
 ## Statements and code blocks
 
@@ -102,12 +104,12 @@ Extra:
 - A code block is a group of statements. They are used to create functions, loops, and conditional statements.
 - In Python code blocks are defined by indentation (spaces at the start of a line).
 
-## Conditions
+## Flow of programs
+
+### Conditions
 
 - A condition is a check or comparison that evaluates to a boolean value.
 - If a condition is true, it triggers one course of action; if it is false, other action will be taken. Conditions are used in `if` statements and `while` loops.
-
-## Flow of programs
 
 ### Conditional statements
 
@@ -135,10 +137,32 @@ for i in range(3)
 
 ## Functions
 
-- Functions are reusable blocks of code that may take inputs, perform computations and actions, and can return an output.
-- Pure functions have no side effects and return the same output for the same inputs.
-- Effectful functions may have side effects, such as modifying global variables or performing I/O operations.
-- Functions can have default parameter values and return multiple values.
+What is it:
+
+- Functions are reusable blocks of code that may take inputs (also called 
+  arguments), perform computations and actions, and can return an output value or return nothing.
+
+Where is it:
+
+- You define a function in one place of a program and run it later in one or more 
+  places. Running a function is also called 'invoking', or 'calling' a function.    
+- Function can be defined in a different file, then you have to import it.
+- You are likely to use built-in functions, stardard library functions
+  and third party library functions and also write your own functions.
+
+What else about it:
+
+- Functions can call other functions.
+- Functions may have default parameter values.
+- Function may have a short text description called a docstring.
+
+Good practice: 
+
+- You can start programming with a script and make own functions when you need 
+  to reuse some code block. 
+- Make a function that does one thing, clearly named and is easy to test.  
+- You can also separate functions that do calculations and the ones that 
+  communicate with outer world (printing, taking inputs, etc).  
 
 ### IO
 
@@ -151,6 +175,10 @@ for i in range(3)
 
 - Files can be opened, read, and written using Python's built-in functions.
 - File operations include opening a file with `open()`, reading with `read()`, and writing with `write()`.
+
+### Reading from internet
+
+- Not possible in the Pyodide programming enviroment, but easy with `httpx` or `requests` libraries where they work.
 
 <!--
 
@@ -183,19 +211,48 @@ for i in range(3)
 
 !-->
 
-## Error handling
+## Errors and tests
 
-- Sometimes a program will encounter an error or impossible condition and stop its execution.
-- Errors are also called exceptions. An exception has a message that tries to explain you what was wrong.
-- You can "catch" exception and change the program behavior, for example print "Division by zero is fine"    
-  instead of stopping and continue the program.
-- However, if a program to terminates near the point of error, it is easier to debug and fix an error.
-- Some errors would not cause exceptions, you will need tests to prove your program is correct.
+### Error handling
 
-## Testing
+- Sometimes a program will encounter an impossible condition and stop its execution.
+  These situations are called exceptions. 
+- Exception provide a message that tries to explain you what went wrong.
+- Some errors would not cause exceptions, and you will need tests to add more guarantees your program is correct.
+
+## Unit testing
 
 - Testing ensures that code behaves as expected. 
 - You can write simple assertions in code with `assert` followed by condition and conver them to tests later.
+- A small test is called a 'unit test'.
+
+## Comments
+
+- Comments in code provide extra information to the reader and do no affect how code runs.
+- Comments in Python start with `#`
+- Do not overcomment - let you code speak clearly for itself.
+
+## Not covered
+
+Several things that usually show up in the beginner courses but you can 
+survive without and catch up later:
+
+- `None`,
+- sets.
+
+Several topics that do not show up often as but are quite useful, consider researching them:
+
+- dataclasses,
+- enums,
+- working with dates and time,
+- `asc()` and `ord()` for ASCII character code,
+- pure vs effectful functions.
+
+<!--
+- Pure functions have no side effects and always return the same output for the same inputs.
+- Effectful functions may have side effects, such as modifying performing I/O operations.
+-->
+
 
 ## Short Glossary
 

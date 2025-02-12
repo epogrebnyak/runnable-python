@@ -1,27 +1,41 @@
 # Books and Talks
 
-## Top choice
+## Top choices for inspiration 
 
 - Allen Downey [Think Python][tp] and the [Green Tea Press series](https://greenteapress.com/wp/).
 - Raymond Hettinger and [Beyond PEP8 talk](https://www.youtube.com/watch?v=wf-BqAjZb8M) (2015).
-- [Developper Voices](https://www.youtube.com/channel/UC-0fWjosItIOD4ThhS6oyfA) podcast by Kris Jenkins.
+- Kris Jenkins talks to developpers about their work in [Developper Voices](https://www.youtube.com/channel/UC-0fWjosItIOD4ThhS6oyfA) podcast.
 
 [tp]: https://allendowney.github.io/ThinkPython/
 
 ## Leading books
 
-- [Allen Downey](https://allendowney.github.io/) and [Think Python][tp] (now in 3rd edition).
+[tp]: https://allendowney.github.io/ThinkPython/
+
+- [Allen Downey](https://allendowney.github.io/) [Think Python][tp] (now in 3rd edition).
 - [Al Sweigart](https://inventwithpython.com/) and ["Automate the Boring Stuff with Python"](https://automatetheboringstuff.com/). 
 - Eric Matthes and ["Python Crash Course"](https://nostarch.com/python-crash-course-3rd-edition) (also 3rd edition).
 
-This a new wave of accessible books that seems to take over more lengthy 
-volumes by Zed Shaw, Mark Pilgrim and Mark Lutz.
+These are modern and more accessible books that seems to be more popular than 
+ealier and more lengthy volumes by Zed Shaw, Mark Pilgrim, Mark Lutz
+and Kenneth Reitz.
 
-[tp]: https://allendowney.github.io/ThinkPython/
+Also notable:
+
+- [A Whirlwind Tour of Python by Jake VanderPlas](https://jakevdp.github.io/WhirlwindTourOfPython/).
+
+## Full course
+
+Take a [University of Helsinki Python MOOC 2025](https://programming-25.mooc.fi/) while it is still free and open.
+
+[py4e](https://www.py4e.com/lessons) is a well-structured beginner course originated in 2015.
 
 ## Short references
 
-[QuantEcon](https://quantecon.org/) and [Scipy Lectures](https://scipy-lectures.org/) make a quick introduction to Python before jumping to bigger topics in quantitative and scientific modelling.
+[QuantEcon](https://quantecon.org/) and [Scipy Lectures](https://scipy-lectures.org/) make a quick introduction to Python before jumping to bigger topics in quantitative and scientific modelling. 
+They can serve as practical introductions to Python.
+
+> Add kaggle link to Zohrab's notebooks.
 
 ## Style guides
 
@@ -41,7 +55,6 @@ Small old gems:
 - [James Powell. So You Want to Be a Python Expert?](https://pyvideo.org/pydata-seattle-2017/so-you-want-to-be-a-python-expert.html)
 - [David Beazley. Discovering Python](https://www.youtube.com/watch?v=RZ4Sn-Y7AP8).
 
-
 ## Programming classics 
 
 [**"The C Programming Language"**][kr] by Kernighan and Ritchie (1978) is a classic in technical writing and a foundational piece of computer literature.
@@ -58,7 +71,11 @@ From [**"The Mythical Man-Month"**][mmm] (MMM) by Fred Brooks (1975), a classic 
 
 <div class="tip custom-block" style="padding-top: 8px">
 
-Hint: Read on the MMM, glance through the SICP table of contents, and get a table copy of K&R.
+::: tip
+
+Read on the _MMM_, glance through the _SICP_ table of contents, and get a table copy of _K&R_.
+
+:::
 
 </div>
 
@@ -102,13 +119,18 @@ Social is hard:
 ## Tired of it?
 
 Sometimes it worth switching your attention to other knowledge areas and 
-domains away from programming. Several suggestions:
+questions away from programming. Several suggestions:
 
-- **[Why Zebras Don't Get Ulcers](https://www.youtube.com/watch?v=XcRFOAKl3OY)** by Robert Sapolsky (1994).
+- **[Why Zebras Don't Get Ulcers](https://www.youtube.com/watch?v=XcRFOAKl3OY)** by 
+  Robert Sapolsky (1994).
 - **[The Last Lecture: Really Achieving Your Childhood Dreams](https://www.youtube.com/watch?v=ji5_MqicxSo)** by Randy Pausch (2007).
+- **[Philosophy of Science](https://finec.mgimo.ru/blog/rafaela-medeiros-philosophy-interview/)** interview with Rafaela Medeiros,
+  where I'm the interview host (2021).
 
+<!--
 Ask your favorite LLM what might be the third title on this list. Names like [Viktor Frankl](https://en.wikipedia.org/wiki/Viktor_Frankl), [Erich Fromm](https://en.wikipedia.org/wiki/Erich_Fromm), [Malcolm Gladwell](https://en.wikipedia.org/wiki/Malcolm_Gladwell),
 and [Daniel Kahneman](https://en.wikipedia.org/wiki/Daniel_Kahneman) may appear.
 
 Also suggesting [Philosophy of Science](https://finec.mgimo.ru/blog/rafaela-medeiros-philosophy-interview/) guest interview with Rafaela Medeiros,
 where I'm the interview host.
+-->

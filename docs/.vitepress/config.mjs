@@ -5,6 +5,7 @@ import { vitepressPythonEditor } from "vitepress-python-editor/vite-plugin";
 export default defineConfig({
   title: "The Python Starter 2025",
   description: "A quick path to start coding",
+  ignoreDeadLinks: true,
   vite: {
     plugins: [vitepressPythonEditor()],
   },
@@ -17,16 +18,16 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Start", link: "/task" },
-      { text: "Resources", link: "/resources" },
-      { text: "About ✍🏻", link: "/introduction" },
+      { text: "Resources", link: "/resources/student-checklist" },
+      { text: "About", link: "/introduction" },
 
     ],
     sidebar: [
       {
         text: "Introduction",
         items: [
-          { text: "Who is this for? ✍🏻", link: "/introduction/index" },
-          { text: "Can I use an LLM? ✍🏻", link: "/introduction/llm" },
+          { text: "Who is this for?", link: "/introduction/index" },
+          { text: "Can I use an LLM?", link: "/introduction/llm" },
         ],
       },
       {
@@ -36,7 +37,7 @@ export default defineConfig({
           { text: "2. Motivate 🏓", link: "/task/motivate" },
           { text: "3. Count 🗿", link: "/task/count" },
           { text: "4. Write text 🗿", link: "/task/write-text" },
-          { text: "5. Print 🗿", link: "/task/print" },
+          { text: "5. Print 🏓", link: "/task/print" },
           { text: "6. Guess 🗿", link: "/task/guess" },
           { text: "7. Assess 🗿", link: "/task/assess" },
         ],
@@ -44,10 +45,11 @@ export default defineConfig({
       {
         text: "Resources",
         items: [
-          { text: "Contributed excercises ✍🏻", link: "/resources/contributed"},
-          { text: "Instructor manual 🏓", link: "/resources/instuctor-manual" },
-          { text: "Books, blogs and talks⭐", link: "/resources/books-and-talks" },
-          { text: "Terms of use", link: "/terms-of-use/" },
+          { text: "Student checklist", link: "/resources/student-checklist" },
+          { text: "Teaching ideas", link: "/resources/teaching-ideas" },
+          { text: "Books, blogs and talks", link: "/resources/books-and-talks" },
+          { text: "Provide feedback", link: "/feedback"},
+          { text: "Terms of use", link: "/terms-of-use" },
         ]
       },    
     ],
