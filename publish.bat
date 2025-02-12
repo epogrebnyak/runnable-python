@@ -1,2 +1,2 @@
 npx vitepress build docs
-ghp-import docs/.vitepress/dist -nf     
+ghp-import docs/.vitepress/dist -nfp     

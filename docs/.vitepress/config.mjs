@@ -6,7 +6,7 @@ export default defineConfig({
   base: "/runnable-python/",
   title: "The Python Starter 2025",
   description: "A quick path to start coding",
-  ignoreDeadLinks: true,
+  // ignoreDeadLinks: true,
   vite: {
     plugins: [vitepressPythonEditor()],
   },
@@ -20,24 +20,18 @@ export default defineConfig({
     nav: [
       { text: "Start", link: "/task" },
       { text: "Resources", link: "/resources/student-checklist" },
+      { text: "Feedback", link: "/feedback" },
       { text: "About", link: "/introduction" },
 
     ],
     sidebar: [
-      {
-        text: "Introduction",
-        items: [
-          { text: "Who is this for?", link: "/introduction/index" },
-          { text: "Can I use an LLM?", link: "/introduction/llm" },
-        ],
-      },
       {
         text: "Seven Tasks in Python",
         items: [
           { text: "1. Greet ⭐", link: "/task/" },
           { text: "2. Motivate 🏓", link: "/task/motivate" },
           { text: "3. Count 🗿", link: "/task/count" },
-          { text: "4. Write text 🗿", link: "/task/write-text" },
+          { text: "4. Write a text 🗿", link: "/task/write-text" },
           { text: "5. Print 🏓", link: "/task/print" },
           { text: "6. Guess 🗿", link: "/task/guess" },
           { text: "7. Assess 🗿", link: "/task/assess" },
@@ -49,7 +43,6 @@ export default defineConfig({
           { text: "Student checklist", link: "/resources/student-checklist" },
           { text: "Teaching ideas", link: "/resources/teaching-ideas" },
           { text: "Books, blogs and talks", link: "/resources/books-and-talks" },
-          { text: "Provide feedback", link: "/feedback"},
           { text: "Terms of use", link: "/terms-of-use" },
         ]
       },    
