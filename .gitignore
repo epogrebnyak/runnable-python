@@ -3,4 +3,5 @@ cache/
 node_modules/
 .aider*
 .env
-docs/.vitepress/dist
+docs/.vitepress/dist/
+.vitepress/dist/
