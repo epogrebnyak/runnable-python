@@ -6,9 +6,10 @@ export default defineConfig({
   base: "/runnable-python/",
   title: "The Python Starter 2025",
   description: "A quick path to start coding",
-  // ignoreDeadLinks: true,
+  ignoreDeadLinks: true,
   vite: {
     plugins: [vitepressPythonEditor()],
+    clearScreen: false
   },
   themeConfig: {
     // footer does not display on the usual page, just on the home page    
@@ -21,12 +22,13 @@ export default defineConfig({
       { text: "Start", link: "/task" },
       { text: "Resources", link: "/resources/student-checklist" },
       { text: "Feedback", link: "/feedback" },
-      { text: "About", link: "/introduction" },
+      { text: "Events", link: "/events" },
+      { text: "About", link: "/" },
 
     ],
     sidebar: [
       {
-        text: "Seven Tasks in Python",
+        text: "Practice Tasks in Python",
         items: [
           { text: "1. Greet ⭐", link: "/task/" },
           { text: "2. Motivate 🏓", link: "/task/motivate" },
