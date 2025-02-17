@@ -136,7 +136,8 @@ final_grade = (85+90+93)/3
 
 - `for` loops repeat a code block by choosing elements from a collection of items.
 - They are often used to iterate over lists, tuples, or strings.
-- You can also use `for` loop with `range()` function you know a specific number of times to run the loop.
+- You can also use `for` loop with `range()` function if you know 
+  a specific number of times to run the loop.
 
 ```python 
 for i in range(3)
@@ -150,7 +151,7 @@ What is it?
 - Functions are reusable blocks of code that may take inputs (also called 
   arguments), perform computations and actions, and can return an output value or return nothing.
 
-Where is it&
+Where is it?
 
 - You define a function in one place of a program and run it later in one or more 
   places. Running a function is also called 'invoking', or 'calling' a function.    
@@ -173,7 +174,7 @@ Good practice:
 - You can also separate functions that do calculations and the ones that 
   communicate with outer world (printing, taking inputs, saving or reading files).  
 
-### IO
+## Input and output (IO)
 
 ### Console
 
@@ -182,6 +183,7 @@ Good practice:
 
 ### Files
 
+- Files are pieces of text or binary information stored on a computer disk.
 - Files can be opened, read, and written using Python's built-in functions `open()`,
   `read()`, and `write()`.
 - There is also a modern `pathlib` library in Python that makes handling files easier. 
@@ -246,32 +248,35 @@ Good practice:
 
 ## Not covered
 
-Several things that usually show up in the beginner courses but you can 
-survive without and catch up later:
+### Can survive without
+
+Several things that usually show up in the beginner courses but you can catch up later:
 
 - `None`,
 - sets.
+
+### Worth a look
 
 Several topics that do not show up often as but are quite useful, consider researching them:
 
 - dataclasses,
 - enums,
-- working with dates and time,
-- `asc()` and `ord()` for ASCII character code.
+- working with dates, time and timezones,
+- `asc()` and `ord()` for ASCII character codes.
 
 <!--
 - Pure functions have no side effects and always return the same output for the same inputs.
 - Effectful functions may have side effects, such as modifying performing I/O operations.
 -->
 
-
-## Short Glossary
+## Glossary
 
 - **Boolean**: A data type with two possible values: `True` or `False`.
-- **Condition**: An expression that evaluates to a boolean value, used to control the flow of a program.
-- **Data type**: A classification of data that tells the compiler or interpreter how to use the data.
+- **Condition**: An expression that evaluates to a boolean value used to control the flow of a program.
+- **Data type**: A classification of data that tells the interpreter how to use the data.
 - **Expression**: A combination of values, variables, operators, and functions that are evaluated to produce a new value.
 - **Function**: A reusable block of code that performs a specific task.
-- **Loop**: A code block that is repeated until a certain condition is reached.
-- **Variable**: An identifier for a stored value that can be accessed or changed during program execution.
+- **Loop**: A code block that is repeated until some condition is reached.
+- **Variable**: An identifier for a stored value. 
 
+See also [Python orginal glossary](https://docs.python.org/3/glossary.html).

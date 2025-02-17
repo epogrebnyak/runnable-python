@@ -21,7 +21,6 @@ export default defineConfig({
     nav: [
       { text: "Start", link: "/task" },
       { text: "Resources", link: "/resources/student-checklist" },
-      { text: "Feedback", link: "/feedback" },
       { text: "Events", link: "/events" },
       { text: "About", link: "/" },
 

@@ -139,3 +139,11 @@ as part of your [exercises](/task/quote).
 
 - **Are there any translations?** Soon for the Kyzgyz
   and Russian languages.
+
+## Feedback
+
+Feel free to reach out with comments or suggestions about this course.
+
+- Open issue.
+- Drop a line on a Reddit discussion.
+- Reach the author directly by email or Telegram.
