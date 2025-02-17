@@ -5,7 +5,7 @@ import { vitepressPythonEditor } from "vitepress-python-editor/vite-plugin";
 export default defineConfig({
   base: "/runnable-python/",
   title: "The Python Starter 2025",
-  description: "A quick path to start coding",
+  description: "Interactive excercises for beginners",
   ignoreDeadLinks: true,
   vite: {
     plugins: [vitepressPythonEditor()],

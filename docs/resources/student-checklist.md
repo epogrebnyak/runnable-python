@@ -1,8 +1,7 @@
 # Student Checklist
 
-Below is an experimental checklist for the Python syntax and 
-some key ideas in programming. Aimed to be minimal 
-but stiil quite a bit to master. Suggestions and comments are welcome.
+Below is a checklist for the minimal Python syntax and 
+some key ideas in programming. 
 
 ## Basic data types
 
@@ -42,11 +41,13 @@ but stiil quite a bit to master. Suggestions and comments are welcome.
 - Python automatically coerces types to minimize the conversions required 
   but sometimes a programmer must do it. Example: `input()` returns a string, but you need a number.
 
-## Data structures (compound data types, collections)
+## Data structures
 
 - Values of basic data types can be assembled into compound data types such as lists, tuples, and dictionaries.
 - A list is a sequence of values of the same type: `[7.5, 6.2, 5.1]`, `['Joe', 'Jane', 'Jim']`. 
-- Tuple joins together several values of the same or different types: `(25.5, 10.3)` (2D coordinates), `(7, "B")` (airplane seat). 
+  Python allows you to join different types of values in a list but you shouldn't. 
+- Tuple joins together several values of the same or different types: `(25.5, 10.3)` (2D coordinates),
+  `(7, "B")` (airplane seat). 
 - Dictionaries are collections of key-value pairs. Using a dictionary you can look up of a value by its key.
 
 Common operations on collections include:
@@ -55,14 +56,15 @@ Common operations on collections include:
   - subset or a slice of a collection,
   - reusing a collection to create a new one.
 
-- Collections can be nested. For example, a list can contain tuples: `[(1, 2), (3, 4)]`.
+- Collections can be nested. For example, a list can contain tuples: `[(1, 2), (5, 5)]`.
 
 ## Values and expressions
 
 - A value is a small piece of data of a specific data type. `5` is an integer value, `0.33` is a float value, and `"Life is wonderful"` is a string value.
-- Several operations on values form an expression. An expression evaluates to a resulting value.
+- Operations on values form an expression. An expression evaluates to a resulting value.
 - Operations have order of precedence that you can clarify with parenthesis `()`. 
-- You can use Python REPL to write out and evaluate expressions.
+- You can use [Python REPL](https://pyodide.org/en/stable/console.html) 
+  to write out and evaluate expressions.
 
 ## Variables
 
@@ -81,21 +83,25 @@ language = "Python"
 message = language + " " + "is great!"
 final_grade = (85+90+93)/3
 ```
-- When unpacking tuples you can assign to several variables: `a, b = (3, 8)`.
+- When unpacking tuples you can assign values to several variables at once: `a, b = (3, 8)`.
 
 ### Mutability
 
-- In Python, all variables are mutable — you can change or reassign new values to them. `x = 5; x = x + 1` works. 
+- In Python, all variables are mutable — you can change or reassign new values to them. `x = 5; x = x + 1` works and `x` value becomes `6`. 
 
 ### Naming
 
-- There are requirements about what a valid variable name can be `my_age` is ok. 
+- There are requirements about what a valid variable name can be. `my_age` is ok. 
 - Choosing good variable names is not trivial and can be very subjective.
 
-### Extra comment
+### Comments
 
-- Unlike in mathematics the value of the variables in programming are always known, they are not to be discovered by solving equations.
-  
+- Unlike in mathematics the value of the variables in programming are always known, they are not to be   
+  discovered by solving equations.
+- Few other programming langiages use `:=` or `<-` as assignment operator to highlight assignment 
+  is not equality.
+
+
 ## Statements and code blocks
 
 - Command to do something in a Python program is called a statement. 
@@ -113,15 +119,17 @@ final_grade = (85+90+93)/3
 
 ### Conditional statements
 
-- An `if` statement instructs the program to execute a code block only if a condition is true.
-- `if-else` statements allow you to execute one block of code if a condition is true and another block if it is false.
-- The `elif` keyword can be used to add multiple conditions.
-
+- An `if` statement instructs the program to execute a code block only if a specified condition is true.
+- `if-else` statements allow you to execute one block of code if a condition is true and another block if 
+  it is false.
+- The `elif` keyword can be used to add multiple conditions. It is easy to overlook some condition in
+  
 ### `while` loops
 
 - `while` loops repeat a code block as long as a condition remains true.
 - They are useful for repeating actions until a certain condition is met. 
-- The actions inside the loop body usually affect the condition (for example a counter or a user input).
+- The actions inside the loop body usually affect the condition.
+  (for example a counter or a user input).
 - You can make an iternal loop with `while True:` and also exit the loop with `break` statement. 
 
 ### `for` loops
@@ -137,12 +145,12 @@ for i in range(3)
 
 ## Functions
 
-What is it:
+What is it?
 
 - Functions are reusable blocks of code that may take inputs (also called 
   arguments), perform computations and actions, and can return an output value or return nothing.
 
-Where is it:
+Where is it&
 
 - You define a function in one place of a program and run it later in one or more 
   places. Running a function is also called 'invoking', or 'calling' a function.    
@@ -150,11 +158,12 @@ Where is it:
 - You are likely to use built-in functions, stardard library functions
   and third party library functions and also write your own functions.
 
-What else about it:
+What else about it?
 
 - Functions can call other functions.
 - Functions may have default parameter values.
 - Function may have a short text description called a docstring.
+- Function arguments and return value may be annotated to tell about types of variables used.
 
 Good practice: 
 
@@ -162,7 +171,7 @@ Good practice:
   to reuse some code block. 
 - Make a function that does one thing, clearly named and is easy to test.  
 - You can also separate functions that do calculations and the ones that 
-  communicate with outer world (printing, taking inputs, etc).  
+  communicate with outer world (printing, taking inputs, saving or reading files).  
 
 ### IO
 
@@ -173,18 +182,16 @@ Good practice:
 
 ### Files
 
-- Files can be opened, read, and written using Python's built-in functions.
-- File operations include opening a file with `open()`, reading with `read()`, and writing with `write()`.
+- Files can be opened, read, and written using Python's built-in functions `open()`,
+  `read()`, and `write()`.
+- There is also a modern `pathlib` library in Python that makes handling files easier. 
 
 ### Reading from internet
 
-- Not possible in the Pyodide programming enviroment, but easy with `httpx` or `requests` libraries where they work.
+- Not possible in the Pyodide programming enviroment that we use inthis course,
+  but easy with `httpx` or `requests` libraries.
 
 <!--
-
-### Reading from internet
-
-- Not possible 
 
 ## Code organisation 
 
@@ -218,19 +225,24 @@ Good practice:
 - Sometimes a program will encounter an impossible condition and stop its execution.
   These situations are called exceptions. 
 - Exception provide a message that tries to explain you what went wrong.
-- Some errors would not cause exceptions, and you will need tests to add more guarantees your program is correct.
+- Some errors would not cause exceptions, and you will need tests to add more guarantees your program is 
+  correct.
 
 ## Unit testing
 
 - Testing ensures that code behaves as expected. 
-- You can write simple assertions in code with `assert` followed by condition and conver them to tests later.
-- A small test is called a 'unit test'.
+- You can write simple assertions in code with `assert` followed by condition 
+  and convert them to tests later.
+- A small test for a part of the code is called a 'unit test'.
+- As experienced programmer you may write the test for you code before the code.
+  This technique is called test driven development (TDD).
 
 ## Comments
 
 - Comments in code provide extra information to the reader and do no affect how code runs.
 - Comments in Python start with `#`
-- Do not overcomment - let you code speak clearly for itself.
+- Do not overcomment — let you code speak clearly for itself.
+- Also do not leave too much commented code in program to clean up later.
 
 ## Not covered
 
@@ -245,8 +257,7 @@ Several topics that do not show up often as but are quite useful, consider resea
 - dataclasses,
 - enums,
 - working with dates and time,
-- `asc()` and `ord()` for ASCII character code,
-- pure vs effectful functions.
+- `asc()` and `ord()` for ASCII character code.
 
 <!--
 - Pure functions have no side effects and always return the same output for the same inputs.
