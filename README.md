@@ -1,7 +1,8 @@
-Seven Pure Python Programs
-==========================
+Greet-To-Grade: Start Python Excercises and Build Your Own Exam 
+===============================================================
 
-A beginner course that makes you write and run small Python programs right in your browser (February 2025). 
+A beginner course that offers you code examples that you can write and run small Python programs right in your browser. 
+The programs allow you to create a test bank and run your own exam program to get your final grade.
 
 Levels
 ------
@@ -17,21 +18,6 @@ three levels of difficulty.
 
 Depending on students' prior programming background a specific course objective may be limited to the entry level or aim higher.
 Advanced level tasks would be appropriate for technical students. 
-
-Task list
----------
-
-Version 0.1.1 (2025-02-19) 
-
-The tasks start with a randomized greeting and proceed to writing a code to grade the course final test.
-
-1. Greet (but be discreet)
-2. Motivate (never accept 'no' as an answer)
-3. Count (with formulas and make an adding machine)
-4. Write text (and make it a contract)
-5. Print (ornaments, shapes, and a maze)
-6. Guess (make an educated one)
-7. Assess (create your own 'true or false' tests)
 
 Programming environment
 -----------------------
@@ -73,6 +59,6 @@ You may not use the material for commercial purposes (NC).
 Reference:
 
 ```
-Evgeny Pogrebnyak (2025). Seven Pure Python Programs for Non-Tech Beginners.
+Evgeny Pogrebnyak (2025). greet2grade: Beginner Python Course With Interactive In-Browser Excercises. 
 URL: https://github.com/epogrebnyak/runnable-python
 ```
